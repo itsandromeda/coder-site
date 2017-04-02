@@ -7,18 +7,21 @@ html {
 }
 
 body {
+    font-family: 'Gudea', sans-serif;
     margin: 0;
     padding: 0;
-    min-width: 100%;
-    font-family: 'Gudea', sans-serif;
 }
 
 body h3 {
-    color: white;
     font-weight: bold;
-    width: 800px;
+    color: white;
     margin: auto;
     margin-top: 20px;
+}
+
+#wrapper {
+    min-width: 800px;
+    min-height: 500px;
 }
 
 #header {
@@ -31,18 +34,18 @@ body h3 {
 
 #header .nav {
     color: #333;
-    width: 800px;
     text-align: right;
-    margin: auto;
     border-bottom: 1px solid #EFEFEF;
+    width: 800px;
+    margin: auto;
 }
 
 .nav img {
     height: 28px;
     margin-left: 15px;
     margin-right: 5px;
-    border-radius: 50px;
-    background: grey;
+    border-radius: 50%;
+    background: #EFEFEF;
 }
 
 .nav img:hover {
@@ -58,18 +61,18 @@ body h3 {
     cursor: pointer;
 }
 
-.wrapper {
+.info {
     width: 800px;
-    height: 220px;
+    height: 231px;
     margin: auto;
 }
 
-.wrapper form {
+.info form {
     display: inline-block;
     float: left;
-    margin-top: 40px;
     width: 335px;
     height: auto;
+    margin-top: 40px;
 }
 
 input,
@@ -100,14 +103,14 @@ textarea {
 
 button {
     background: transparent;
-    color: #DC6180;
     font-size: 10px;
-    padding: 8px 15px;
+    color: #DC6180;
     border-radius: 50px;
     border: 1px solid #DC6180;
     transition-property: background, color;
     transition-duration: .3s;
     margin: 10px 25px 15px;
+    padding: 8px 15px;
     outline: none;
     cursor: pointer;
 }
@@ -127,21 +130,57 @@ button:hover {
     margin: 30px 15px;
 }
 
-#posts {
+.posts {
     width: 800px;
+    min-height: 275px;
     margin: auto;
+    margin-bottom: 15px;
 }
 
-#posts h3 {
+.posts h3 {
     padding: 5px 25px;
+}
+
+#comments {
+    padding: 5px 25px;
+    color: #333;
+}
+
+#comments span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#comments div {
+    font-size: 13px;
+    background: white;
+}
+
+.comments {
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+.trash {
+    position: relative;
+    float: right;
+    bottom: 12px;
+    color: #333;
+}
+
+.trash:hover {
+    color: #DC6180;
 }
 
 footer {
     font-size: 12px;
     color: white;
-    position: absolute;
-    bottom: 10px;
-    right: 44%;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 44%;
 }
 
 footer a {
